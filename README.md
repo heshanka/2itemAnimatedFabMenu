@@ -10,7 +10,7 @@ An easy implementation of animated FAB menu with 2 FAB descendants using Animate
 
 #### Case 2: Screens with keyboard input
 
-  Wrapping the FABs with `Visibility` widget with `visible:false` when user opens keyboard
+  Wrapping the FABs with `Visibility` widget with `visible:false` when user opens keyboard hides the menu as the alignment values change upon keyboard opening.  
   
    If keyboard is hidden `MediaQuery.of(context).viewInsets.bottom==0`
 
