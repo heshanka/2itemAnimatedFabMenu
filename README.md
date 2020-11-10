@@ -1,4 +1,4 @@
-# 2itemAnimatedFab | In Progress.
+# 2itemAnimatedFabMenu | In Progress.
 
 An easy implementation of animated FAB menu with 2 FAB descendants using AnimatedAlign widget.
 
