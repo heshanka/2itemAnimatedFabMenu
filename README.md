@@ -12,7 +12,7 @@ An easy implementation of animated FAB menu with 2 FAB descendants using Animate
 
   Wrapping the FABs with `Visibility` widget with `visible:false` when user opens keyboard hides the menu as the alignment values change upon keyboard opening.  
   
-   If keyboard is hidden `MediaQuery.of(context).viewInsets.bottom==0`
+   (Tip:- If keyboard is hidden `MediaQuery.of(context).viewInsets.bottom==0`)
 
 
 ![](crFab.gif)
