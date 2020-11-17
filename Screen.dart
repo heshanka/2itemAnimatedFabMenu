@@ -44,6 +44,7 @@ class _ScreenState extends State<Screen> {
                 print("ANIMATION ENDED");
               },
               child: FloatingActionButton(
+                heroTag: "editButton",
                 backgroundColor: Color(0xff89cf95),
                 foregroundColor: Colors.white,
                 child: Icon(Icons.edit),
@@ -60,6 +61,7 @@ class _ScreenState extends State<Screen> {
                 print("ANIMATION ENDED");
               },
               child: FloatingActionButton(
+                heroTag: "addPhotoButton",
                 backgroundColor: Color(0xffF4C2C2),
                 foregroundColor: Colors.white,
                 child: Icon(Icons.add_a_photo),
@@ -70,6 +72,7 @@ class _ScreenState extends State<Screen> {
         ),
         //todo what should this button do exactly?
         floatingActionButton: FloatingActionButton(
+          heroTag: "addButton",
           backgroundColor: Color(0xff89cff0),
           foregroundColor: Colors.white,
           child: Icon(
