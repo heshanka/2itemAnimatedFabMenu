@@ -32,6 +32,7 @@ class _ScreenState extends State<Screen> {
         backgroundColor: Colors.white,
         body: Stack(
           children: [
+            //The body of the screen other than the Fab Menu should be entered as the children of the column
             Column(
               children: [
               ],
