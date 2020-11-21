@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// Code for a screen containing only the Fab Menu
 class Screen extends StatefulWidget {
 
   @override
