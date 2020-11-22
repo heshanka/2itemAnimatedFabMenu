@@ -43,16 +43,14 @@ class _ScreenState extends State<Screen> {
               curve: Curves.easeOut,
               duration: Duration(milliseconds: 300),
               onEnd: () {
-                print("ANIMATION ENDED");
+                debugPrint("ANIMATION ENDED");
               },
               child: FloatingActionButton(
                 heroTag: "editButton",
                 backgroundColor: Color(0xff89cf95),
                 foregroundColor: Colors.white,
                 child: Icon(Icons.edit),
-                onPressed: () {
-                  //titleFocusNode.requestFocus();
-                },
+                onPressed: () {},
               ),
             ),
             AnimatedAlign(
@@ -60,7 +58,7 @@ class _ScreenState extends State<Screen> {
               curve: Curves.easeOut,
               duration: Duration(milliseconds: 300),
               onEnd: () {
-                print("ANIMATION ENDED");
+                debugPrint("ANIMATION ENDED");
               },
               child: FloatingActionButton(
                 heroTag: "addPhotoButton",
