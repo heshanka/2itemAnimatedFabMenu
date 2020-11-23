@@ -9,20 +9,20 @@ class Screen extends StatefulWidget {
 
 class _ScreenState extends State<Screen> {
 
-  Alignment editBtnAlign = Alignment(0.905, 0.954);
-  Alignment emotionBtnAlign = Alignment(0.905, 0.954);
+  Alignment upperBtnAlign = Alignment(0.905, 0.954);
+  Alignment lowerBtnAlign = Alignment(0.905, 0.954);
   bool fabClick = false;
 
   void changeBtnAlign() {
     if (fabClick)
       setState(() {
-        editBtnAlign = Alignment(0.7, 0.7);
-        emotionBtnAlign = Alignment(0.4, 0.85);
+        upperBtnAlign = Alignment(0.7, 0.7);
+        lowerBtnAlign = Alignment(0.4, 0.85);
       });
     else {
       setState(() {
-        editBtnAlign = Alignment(0.905, 0.954);
-        emotionBtnAlign = Alignment(0.905, 0.954);
+        upperBtnAlign = Alignment(0.905, 0.954);
+        lowerBtnAlign = Alignment(0.905, 0.954);
       });
     }
   }
@@ -39,14 +39,14 @@ class _ScreenState extends State<Screen> {
               ],
             ),
             AnimatedAlign(
-              alignment: editBtnAlign,
+              alignment: upperBtnAlign,
               curve: Curves.easeOut,
               duration: Duration(milliseconds: 300),
               onEnd: () {
                 debugPrint("ANIMATION ENDED");
               },
               child: FloatingActionButton(
-                heroTag: "editButton",
+                heroTag: "upperButton",
                 backgroundColor: Color(0xff89cf95),
                 foregroundColor: Colors.white,
                 child: Icon(Icons.edit),
@@ -54,14 +54,14 @@ class _ScreenState extends State<Screen> {
               ),
             ),
             AnimatedAlign(
-              alignment: emotionBtnAlign,
+              alignment: lowerBtnAlign,
               curve: Curves.easeOut,
               duration: Duration(milliseconds: 300),
               onEnd: () {
                 debugPrint("ANIMATION ENDED");
               },
               child: FloatingActionButton(
-                heroTag: "addPhotoButton",
+                heroTag: "lowerButton",
                 backgroundColor: Color(0xffF4C2C2),
                 foregroundColor: Colors.white,
                 child: Icon(Icons.add_a_photo),
